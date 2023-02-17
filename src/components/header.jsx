@@ -37,9 +37,8 @@ export const Header = () => {
             display={["none", "none", "flex", "flex"]}
           >
             {Menus?.map((el, idx) => (
-              <Link href={`#${el}`} scroll={false}>
+              <Link href={`#${el}`} scroll={false} key={el}>
                 <Text
-                  key={el}
                   cursor="pointer"
                   opacity={router?.asPath?.includes(el) ? 1 : 0.5}
                   _hover={{ opacity: 1 }}

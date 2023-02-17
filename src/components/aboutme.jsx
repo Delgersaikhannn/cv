@@ -78,27 +78,18 @@ export const AboutMe = () => {
             >
               Delgersaikhan Altanzul
             </Text>
-            <VStack textAlign="justify">
+            <VStack textAlign="justify" alignItems="flex-start">
               <Text>
-                Hi there. It's a pleasure to meet you. I am a Software
-                Engineering student cum laude from the National University of
-                Mongolia.
+                Hello, nice to meet you. I am a software engineer who is
+                motivated to do creative things.
               </Text>
               <Text>
-                Since childhood, I have always been interested in technology. I
-                work at a fintech company as a software engineer on different
-                projects implementing the R&A approach. As a technology
-                enthusiast, I enjoy experimenting with different technologies
-                and frameworks to see changes and capabilities. Recently, I have
-                been working on a project, some parts of which need to operate
-                in parallel.
+                As a creative developer, i always searches an unique solution in
+                every obstacles. I am currently working on the web3 dapps.
               </Text>
               <Text>
-                Although using an open-source framework is the easiest way to
-                solve this, I decided to discover this in depth through the
-                lessons available on the internet. Apart from that, I am keen on
-                swimming, yoga, acrylic painting, and playing piano. If you want
-                to know more about me, click the arrow below!
+                Besides from that, I am really passionate to make an digital or
+                traditional arts.
               </Text>
             </VStack>
           </VStack>
