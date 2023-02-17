@@ -2,6 +2,9 @@ import { Box, Center, Text, VStack } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 export const Intro = () => {
+  const scrollDown = () => {
+    window.scrollTo(0, window.innerHeight);
+  };
   return (
     <Center
       minH="100vh"
@@ -36,11 +39,13 @@ export const Intro = () => {
         >
           <VStack fontFamily="'nokia'">
             <Text
-              fontSize={["30px", "60px", "70px", "70px"]}
+              fontSize={["30px", "40px", "55px", "65px", "70px"]}
               textAlign="center"
               fontWeight={700}
-              textShadow="0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6,
-          0 0 50px #ff4da6, 0 0 55px #ff4da6"
+              textShadow={[
+                "0 0 5px #fff, 0 0 10px #ff4da6, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6",
+                "0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 35px #ff4da6, 0 0 45px #ff4da6",
+              ]}
             >
               Delgersaikhan Altanzul
             </Text>
@@ -48,7 +53,7 @@ export const Intro = () => {
           </VStack>
         </motion.div>
 
-        <Box>
+        <Box onClick={scrollDown} cursor="pointer">
           <div class="scroll-downs">
             <div class="mousey">
               <div class="scroller"></div>

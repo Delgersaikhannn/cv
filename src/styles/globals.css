@@ -6,6 +6,7 @@
 
 html, body{
   background-color: #040b1d;
+  scroll-behavior: smooth;
 }
 
 .scroll-downs {

@@ -1,12 +1,18 @@
 import { Container } from "@/utils/globals";
 import { Box, HStack, Text, VStack } from "@chakra-ui/react";
 import { motion, useScroll } from "framer-motion";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { IoMenu } from "react-icons/io5";
 
-const Menus = ["About", "Education", "Experience", "Projects"];
+const Menus = ["about", "education", "experience", "projects"];
 
 export const Header = () => {
   const { scrollYProgress } = useScroll();
+
+  const router = useRouter();
+
+  console.log(router);
 
   return (
     <VStack w="100%" spacing={0} zIndex={1} fontFamily="'nokia'">
@@ -27,18 +33,21 @@ export const Header = () => {
         >
           {/* <Text>Delgersaikhan </Text> */}
           <HStack
-            spacing={[3, 3, 4, 4]}
+            spacing={[3, 3, 4, 9]}
             display={["none", "none", "flex", "flex"]}
           >
             {Menus?.map((el, idx) => (
-              <Text
-                key={el}
-                cursor="pointer"
-                opacity={0.5}
-                _hover={{ opacity: 1 }}
-              >
-                {el}
-              </Text>
+              <Link href={`#${el}`} scroll={false}>
+                <Text
+                  key={el}
+                  cursor="pointer"
+                  opacity={router?.asPath?.includes(el) ? 1 : 0.5}
+                  _hover={{ opacity: 1 }}
+                  textTransform="capitalize"
+                >
+                  {el}
+                </Text>
+              </Link>
             ))}
           </HStack>
           <Box display={["flex", "flex", "none", "none"]}>
