@@ -191,7 +191,7 @@ export const AboutMe = () => {
                 pt={[3, 3, 5, 5]}
               >
                 {DATA?.map((el, idx) => (
-                  <Contact {...el} />
+                  <Contact {...el} key={"contact_" + idx} />
                 ))}
               </SimpleGrid>
             </VStack>
