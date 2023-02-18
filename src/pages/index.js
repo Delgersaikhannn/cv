@@ -11,6 +11,7 @@ import { Experience } from "@/components/experience";
 import { AboutMe } from "@/components/aboutme";
 import { Education } from "@/components/education";
 import { Projects } from "@/components/projects";
+import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function Home() {
       <Education />
       <Experience />
       <Projects />
+      <Footer />
     </VStack>
   );
 }

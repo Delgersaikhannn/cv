@@ -1,5 +1,14 @@
 import { Container } from "@/utils/globals";
-import { Box, HStack, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  HStack,
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuList,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -11,8 +20,6 @@ export const Header = () => {
   const { scrollYProgress } = useScroll();
 
   const router = useRouter();
-
-  console.log(router);
 
   return (
     <VStack w="100%" spacing={0} zIndex={1} fontFamily="'nokia'">
@@ -49,9 +56,31 @@ export const Header = () => {
               </Link>
             ))}
           </HStack>
-          <Box display={["flex", "flex", "none", "none"]}>
-            <IoMenu size="24px" />
-          </Box>
+          <Menu size="sm">
+            <MenuButton>
+              <Box display={["flex", "flex", "none", "none"]}>
+                <IoMenu size="24px" />
+              </Box>
+            </MenuButton>
+            <MenuList bg="#040b1d">
+              {Menus?.map((el, idx) => (
+                <Link href={`#${el}`} key={"m_" + el} scroll={false}>
+                  <MenuItem bg="#040b1d">
+                    <Text
+                      cursor="pointer"
+                      opacity={router?.asPath?.includes(el) ? 1 : 0.5}
+                      _hover={{ opacity: 1 }}
+                      textTransform="capitalize"
+                      fontSize={"sm"}
+                      py={2}
+                    >
+                      {el}
+                    </Text>
+                  </MenuItem>
+                </Link>
+              ))}
+            </MenuList>
+          </Menu>
         </HStack>
       </HStack>
     </VStack>

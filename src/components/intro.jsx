@@ -14,6 +14,7 @@ export const Intro = () => {
       bgPos="center"
       bgRepeat="no-repeat"
       bgSize="cover"
+      backgroundAttachment="fixed"
     >
       <VStack
         pos="absolute"
