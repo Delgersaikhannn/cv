@@ -15,18 +15,35 @@ import { Footer } from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+const SEO = {
+  title: "Delgersaikhan Altanzul",
+  desc: "The presentation website of Delgersaikhan Altanzul, an ordinary software engineer from Mongolia.",
+  img: "/layout/Delgersaikhan.png",
+};
+
 export default function Home() {
   return (
     <VStack minH="100vh" spacing={0} bg="#040b1d">
       <Header />
       <Head>
-        <title>Delgersaikhan Altanzul</title>
-        <meta
-          name="description"
-          content="The presentation website of Delgersaikhan Altanzul, a software engineer from Mongolia."
-        />
+        <title>{SEO.title}</title>
+        <meta name="description" content={SEO.desc} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.png" />
+
+        <meta itemprop="name" content={SEO.title} />
+        <meta itemprop="description" content={SEO.desc} />
+        <meta itemprop="image" content={SEO.img} />
+        {/* For facebook */}
+
+        <meta property="og:title" content={SEO.title} />
+        <meta property="og:description" content={SEO.desc} />
+        <meta property="og:image" content={SEO.img} />
+
+        {/* For twitter */}
+        <meta name="twitter:description" content={SEO.desc} />
+        <meta name="twitter:title" content={SEO.title} />
+        <meta name="twitter:image" content={SEO.img} />
       </Head>
       <Intro />
       <AboutMe />
