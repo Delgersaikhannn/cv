@@ -12,7 +12,7 @@ import {
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import { useRef, useState } from "react";
-import { BsTelephone } from "react-icons/bs";
+import { BsFileEarmarkTextFill, BsTelephone } from "react-icons/bs";
 import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -51,6 +51,11 @@ const Socials = [
   {
     icon: <FaFacebookSquare />,
     href: "facebook.com/profile.php?id=100005765805891",
+  },
+
+  {
+    icon: <BsFileEarmarkTextFill />,
+    href: "/files/cv.pdf",
   },
   //   {
   //     icon: <FaGithub />,

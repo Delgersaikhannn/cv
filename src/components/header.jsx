@@ -12,14 +12,24 @@ import {
 import { motion, useScroll } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 
 const Menus = ["about", "education", "experience", "projects"];
 
 export const Header = () => {
   const { scrollYProgress } = useScroll();
+  const [scroll, setScroll] = useState(false);
 
   const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setScroll(window.pageYOffset > 200)
+      );
+    }
+  }, []);
 
   return (
     <VStack w="100%" spacing={0} zIndex={1} fontFamily="'nokia'">
@@ -28,7 +38,15 @@ export const Header = () => {
         className="progress-bar"
       />
 
-      <HStack w="100%" pos="fixed" top={0} zIndex={1}>
+      <HStack
+        w="100%"
+        pos="fixed"
+        top={0}
+        zIndex={1}
+        bg={scroll ? "rgba(0,0,0,.3)" : "transparent"}
+        backdropFilter={scroll ? "blur(5px)" : "none"}
+        transition="ease-out 0.3s"
+      >
         <HStack
           w={Container}
           py={[4, 4, 9, 9]}
