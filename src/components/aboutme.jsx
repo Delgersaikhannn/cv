@@ -68,7 +68,7 @@ const Socials = [
 ];
 
 const AvatarBadge = () => {
-  const [change, setChange] = useState(false);
+  const [change, setChange] = useState(true);
 
   const toggle = () => setChange(!change);
 
@@ -167,13 +167,12 @@ export const AboutMe = () => {
               fontSize={["sm", "sm", "md", "md"]}
             >
               <Text>
-                Hello, nice to meet you. I am a software engineer who is
-                motivated to do creative things. I am a software engineer who is
-                highly motivated to master the field of Computer Science.
-                Experienced with web development, mobile development, DevOps,
-                machine learning, and blockchain technology. I have an
-                experience with programming languages including Javascript,
-                Java, Python, C, and Solidity.
+                Hello, nice to meet you. I am a software engineer who is highly
+                motivated to master the field of Computer Science. Experienced
+                with web development, mobile development, DevOps, machine
+                learning, and blockchain technology. I have an experience with
+                programming languages including Javascript, Java, Python, C, and
+                Solidity.
               </Text>
               <Text>
                 As a creative developer, i always searches an unique solution in
