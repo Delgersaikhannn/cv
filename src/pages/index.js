@@ -18,7 +18,7 @@ const inter = Inter({ subsets: ["latin"] });
 const SEO = {
   title: "Delgersaikhan Altanzul",
   desc: "The presentation website of Delgersaikhan Altanzul, an ordinary software engineer from Mongolia.",
-  img: "/layout/Delgersaikhan.png",
+  img: "https://firebasestorage.googleapis.com/v0/b/delgersaikhan-75641.appspot.com/o/Subject%202.png?alt=media&token=704a9b73-8492-4ff9-aa9f-c97a5691a8b1",
 };
 
 export default function Home() {

@@ -8,7 +8,7 @@ export const Intro = () => {
   return (
     <Center
       minH="100vh"
-      bg="url(/layout/bg.gif)"
+      bg="url(https://firebasestorage.googleapis.com/v0/b/delgersaikhan-75641.appspot.com/o/bg.gif?alt=media&token=6d101f9f-53b8-4d63-90f7-2c11da146509)"
       w="100%"
       pos="relative"
       bgPos="center"

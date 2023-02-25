@@ -75,7 +75,7 @@ const AvatarBadge = () => {
   if (change)
     return (
       <Avatar
-        src="/layout/profile.png"
+        src="https://firebasestorage.googleapis.com/v0/b/delgersaikhan-75641.appspot.com/o/profile.png?alt=media&token=6dab2734-3462-4c23-98b3-97cde03894c8"
         w="100%"
         onClick={toggle}
         cursor="pointer"
@@ -83,7 +83,7 @@ const AvatarBadge = () => {
     );
   return (
     <Avatar
-      src="/layout/Delgersaikhan.png"
+      src="https://firebasestorage.googleapis.com/v0/b/delgersaikhan-75641.appspot.com/o/Delgersaikhan.png?alt=media&token=e69b75a7-b7ab-4ab0-b24e-6a7ebf6f9743"
       w="100%"
       boxShadow="  0 0 30px 0px #7f30cb; "
       onClick={toggle}
