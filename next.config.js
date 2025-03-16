@@ -1,8 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  assetPrefix: process.env.NODE_ENV === "production" ? "/cv/" : "",
   images: {
-    unoptimized: true, // Disable image optimization for static export
+    unoptimized: true,
   },
 };
 
