@@ -50,7 +50,7 @@ export const Intro = () => {
             >
               Delgersaikhan Altanzul
             </Text>
-            <Text fontSize={["md", "md", "lg", "lg"]}>Software engineer</Text>
+            <Text fontSize={["md", "md", "lg", "lg"]}>Web3 Developer</Text>
           </VStack>
         </motion.div>
 

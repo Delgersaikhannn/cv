@@ -35,7 +35,7 @@ export const Education = () => {
                 </Text>
               </Link>
 
-              <Text pt={[2]}>{el.description}</Text>
+              <Text  opacity={0.5} pt={[1]}>{el.description}</Text>
             </VStack>
           ))}
 
@@ -56,6 +56,26 @@ export const Education = () => {
             </HStack>
             <Text fontSize={["sm"]} opacity={0.5}>
               Listening - 6.0, Reading - 6.0, Writing - 6.0, Speaking - 6.0
+            </Text>
+          </VStack>
+
+          <VStack spacing={0} alignItems="flex-start" pt={3}>
+            <Text fontSize={["xs"]} opacity={0.5}>
+              {" "}
+               Aug 2024
+            </Text>
+            <HStack
+              flexDir={["column", "column", "row", "row"]}
+              alignItems={["flex-start", "flex-start", "center", "center"]}
+              spacing={[0, 0, 3, 3]}
+            >
+              <Text fontWeight={700}>META Front-End developer  </Text>
+              {/* <Text fontSize={["sm"]} fontStyle="italic">
+                by Coursera
+              </Text> */}
+            </HStack>
+            <Text fontSize={["sm"]} opacity={0.5}>
+            by Coursera
             </Text>
           </VStack>
         </VStack>

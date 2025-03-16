@@ -17,11 +17,7 @@ import { HiOutlineLocationMarker, HiOutlineMail } from "react-icons/hi";
 import { FaFacebookSquare, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const DATA = [
-  {
-    label: "+976 88981797",
-    icon: <BsTelephone />,
-    href: "tel:+976 88981797",
-  },
+
   {
     label: "+976 90115326",
     icon: <BsTelephone />,

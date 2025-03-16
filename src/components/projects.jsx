@@ -115,10 +115,43 @@ const DATA = [
     title: "Feast",
     description:
       "DAO (Decentralized Autonomous Organization) web3 d-app based on collect and gain model. I am experiencing knowledge about blockchain and its standards with the implementation of front-end applications.",
-    date: "Dec 2022 - present",
+    date: "Dec 2022 - Jan 2023",
     link: "https://feast.thewolves.io/",
     techs: ["js", "next", "react", "mongodb", "sol"],
   },
+  {
+    title: "Tus Fintech",
+    description:
+      "One of my experience in fintech project was Tus fintech, which has thosands of costumers in Mongolia. My part of the project was mostly the Front-end development.",
+    date: "Feb 2023 - Jun 2023",
+    link: "https://www.tusfintech.mn/",
+    techs: ["js", "next", "react", "css"],
+  },
+  {
+    title: "BaseName",
+    description:
+      "One of my highlight project was BaseName the NameService platform on Base chain. During the early announcement of Base chain, my team developed 3D NFT project that can integrate Name service on Base chain. I did Front-end part of project and familiriazized with blockChain and NFT project.",
+    date: "Jun 2023 - Dec 2023",
+    link: "https://www.basename.app/",
+    techs: ["js", "next", "react", "css", "sol"],
+  },
+  {
+    title: "1QR",
+    description:
+      "QR generating platform. I mostly worked on Back-end side with dynamic qr management system.",
+    date: "May 2024 - Aug 2024",
+    link: "https://co.1qr.com/",
+    techs: ["js", "next", "react", "sql"],
+  },
+  {
+    title: "SoftWave",
+    description:
+      "Since started doing a freelancer projects I founded Softwave with my tech team and now working with our clients.",
+    date: "Jan 2025 - present",
+    link: "https://www.softwave.app/",
+    techs: [ ],
+  },
+
 ];
 
 export const Projects = () => {

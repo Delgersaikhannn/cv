@@ -18,7 +18,13 @@ const DATA = [
     title: "Full-stack developer, Infinite Solutions LLC, Mongolia",
     description:
       "Finally, I got back to my previous work with a new experience. As a full-stack developer, I wrote the server-side codings and did the DevOps tasks such as planning, coding, and testing. Then, I learned about how to write a smart contract with standards including the ERC-20, ERC-720, and ERC-1155 on Solidity.",
-    date: "Aug 2022 - present",
+    date: "Aug 2022 - Aug 2024",
+  },
+  {
+    title: "Web3 Developer, Freelance",
+    description:
+      "Starting as a Freelancer developer, I am unlocking new opportunities with every project I was working and expanding my networking. Fully focusing on new tech or creative solutions on Web3 industry.",
+    date: "Aug 2024 - present",
   },
 ];
 
